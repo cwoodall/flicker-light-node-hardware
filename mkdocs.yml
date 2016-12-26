@@ -1,0 +1,19 @@
+site_name: 'Flicker Light Node Hardware'
+project_slug: 'flicker-light-node-hardware'
+site_description: "Hardware for the Flicker Light Nodes using ATMega168's and NRF24L01's"
+site_author: 'Christopher Woodall'
+site_favicon: 'assets/img/favicon.ico'
+copyright: '(c) 2016 by Christopher Woodall'
+
+pages:
+- 'Introduction': 'index.md'
+- 'Installation': 'installation.md'
+- 'Usage': 'usage.md'
+- 'License': 'licenses.md'
+- 'History': 'history.md'
+- 'Authors': 'authors.md'
+- 'Contributing': 'contributing.md'
+
+theme: 'readthedocs'
+docs_dir: 'docs/'
+site_dir: 'site'

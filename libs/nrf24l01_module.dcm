@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NRF24L01_MODULE
+D NRF240L1+ 2.4GHz Wireless Transceiver
+K radio,nrf240l1,wireless
+$ENDCMP
+#
+#End Doc Library
