@@ -1,0 +1,25 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# BUDBOX_HB3660
+#
+DEF BUDBOX_HB3660 M 0 40 Y Y 1 F N
+F0 "M" 100 -50 59 H V C CNN
+F1 "BUDBOX_HB3660" 400 -150 59 H V C CNN
+F2 "" 0 0 118 H I C CNN
+F3 "http://www.budind.com/pdf/hb3660.pdf" 1300 -1350 118 H I C CNN
+F4 "Bud Industries" 150 -1150 118 H I C CNN "Manufacturer"
+F5 "HB3660" -150 -1000 118 H I C CNN "Manufacturer Part Number"
+F6 "Digikey" -150 -700 118 H I C CNN "Supplier"
+F7 "377-1655-ND" 200 -850 118 H I C CNN "Supplier Part Number"
+DRAW
+C 100 100 50 0 1 0 N
+C 100 300 50 0 1 0 N
+C 450 100 50 0 1 0 N
+C 450 300 50 0 1 0 N
+S 0 0 550 400 0 1 0 N
+S 50 350 500 50 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+#End Library
