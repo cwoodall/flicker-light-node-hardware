@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/cwoodall/workspace/personal/flicker-light-node-hardware/pcb/flicker-light-node-hardware.sch)
+    (source /home/cwoodall/workspace/personal/flighter-lights-node-hardware/pcb/flighter-lights-node-hardware.sch)
     (date "Sun 25 Dec 2016 10:21:42 PM EST")
     (tool "Eeschema 4.0.4-1.fc25-product")
     (sheet (number 1) (name /) (tstamps /)
@@ -9,11 +9,11 @@
         (company "Christopher Woodall")
         (rev 0.1.0)
         (date 2016-12-25)
-        (source flicker-light-node-hardware.sch)
+        (source flighter-lights-node-hardware.sch)
         (comment (number 1) (value "(c) 2016"))
         (comment (number 2) (value cookiecutter.project_type))
         (comment (number 3) (value "CC BY 4.0"))
-        (comment (number 4) (value github.com/cwoodall/flicker-light-node-hardware)))))
+        (comment (number 4) (value github.com/cwoodall/flighter-lights-node-hardware)))))
   (components
     (comp (ref IC1)
       (value ATMEGA168PA-MM)
@@ -564,7 +564,7 @@
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical nrf24l01_module)
-      (uri /home/cwoodall/workspace/personal/flicker-light-node-hardware/libs/nrf24l01_module.lib)))
+      (uri /home/cwoodall/workspace/personal/flighter-lights-node-hardware/libs/nrf24l01_module.lib)))
   (nets
     (net (code 1) (name +3V3)
       (node (ref P4) (pin 2))

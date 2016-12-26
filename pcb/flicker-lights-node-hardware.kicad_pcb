@@ -20,7 +20,7 @@
     (comment 1 2016)
     (comment 2 OSHW)
     (comment 3 "CC BY 4.0")
-    (comment 4 github.com/cwoodall/flicker-light-node-hardware)
+    (comment 4 github.com/cwoodall/flighter-lights-node-hardware)
   )
 
   (layers

@@ -1,5 +1,5 @@
 site_name: 'Flicker Light Node Hardware'
-project_slug: 'flicker-light-node-hardware'
+project_slug: 'flighter-lights-node-hardware'
 site_description: "Hardware for the Flicker Light Nodes using ATMega168's and NRF24L01's"
 site_author: 'Christopher Woodall'
 site_favicon: 'assets/img/favicon.ico'

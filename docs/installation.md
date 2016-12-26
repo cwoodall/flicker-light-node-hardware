@@ -2,4 +2,4 @@
 
 Just clone this project from Github:
 
-    $ git clone https://github.com/cwoodall/flicker-light-node-hardware.git
+    $ git clone https://github.com/cwoodall/flighter-lights-node-hardware.git

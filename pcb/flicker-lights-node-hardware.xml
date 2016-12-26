@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/cwoodall/workspace/personal/flicker-light-node-hardware/pcb/flicker-light-node-hardware.sch</source>
+    <source>/home/cwoodall/workspace/personal/flighter-lights-node-hardware/pcb/flighter-lights-node-hardware.sch</source>
     <date>Sun 25 Dec 2016 08:56:18 PM EST</date>
     <tool>Eeschema 4.0.4-1.fc25-product</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -10,11 +10,11 @@
         <company>Christopher Woodall</company>
         <rev>0.1.0</rev>
         <date>2016-12-25</date>
-        <source>flicker-light-node-hardware.sch</source>
+        <source>flighter-lights-node-hardware.sch</source>
         <comment number="1" value="(c) 2016"/>
         <comment number="2" value="cookiecutter.project_type"/>
         <comment number="3" value="CC BY 4.0"/>
-        <comment number="4" value="github.com/cwoodall/flicker-light-node-hardware"/>
+        <comment number="4" value="github.com/cwoodall/flighter-lights-node-hardware"/>
       </title_block>
     </sheet>
   </design>
@@ -565,7 +565,7 @@
       <uri>/usr/share/kicad/library/conn.lib</uri>
     </library>
     <library logical="nrf24l01_module">
-      <uri>/home/cwoodall/workspace/personal/flicker-light-node-hardware/libs/nrf24l01_module.lib</uri>
+      <uri>/home/cwoodall/workspace/personal/flighter-lights-node-hardware/libs/nrf24l01_module.lib</uri>
     </library>
   </libraries>
   <nets>

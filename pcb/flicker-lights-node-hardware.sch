@@ -29,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:nrf24l01_module
-LIBS:flicker-light-node-hardware-cache
+LIBS:flighter-lights-node-hardware-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -42,7 +42,7 @@ Comp "Christopher Woodall"
 Comment1 "(c) 2016"
 Comment2 "cookiecutter.project_type"
 Comment3 "CC BY 4.0"
-Comment4 "github.com/cwoodall/flicker-light-node-hardware"
+Comment4 "github.com/cwoodall/flighter-lights-node-hardware"
 $EndDescr
 $Comp
 L ATMEGA168PA-MM IC1

@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ### Report Bugs
 
-Report bugs at https://github.com/cwoodall/flicker-light-node-hardware/issues.
+Report bugs at https://github.com/cwoodall/flighter-lights-node-hardware/issues.
 
 If you are reporting a bug, please include:
 
@@ -35,7 +35,7 @@ articles, and such.
 
 ### Submit Feedback
 
-The best way to send feedback is to file an issue at https://github.com/cwoodall/flicker-light-node-hardware/issues.
+The best way to send feedback is to file an issue at https://github.com/cwoodall/flighter-lights-node-hardware/issues.
 
 If you are proposing a feature:
 
@@ -44,12 +44,12 @@ If you are proposing a feature:
 
 ### Get Started!
 
-Ready to contribute? Here's how to set up `flicker-light-node-hardware` for local development.
+Ready to contribute? Here's how to set up `flighter-lights-node-hardware` for local development.
 
-1. Fork the `flicker-light-node-hardware` repo on GitHub.
+1. Fork the `flighter-lights-node-hardware` repo on GitHub.
 2. Clone your fork locally:
 
-        $ git clone git@github.com:your_name_here/flicker-light-node-hardware.git
+        $ git clone git@github.com:your_name_here/flighter-lights-node-hardware.git
 
 3. Create a branch for local development:
 
