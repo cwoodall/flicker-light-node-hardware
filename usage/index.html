@@ -55,19 +55,20 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../installation/">Installation</a>
-        
-    </li>
-<li>
-          
-            <li>
     <li class="toctree-l1 current">
         <a class="current" href="./">Usage</a>
         
             <ul>
             
                 <li class="toctree-l3"><a href="#usage">Usage</a></li>
+                
+                    <li><a class="toctree-l4" href="#requirements">Requirements</a></li>
+                
+                    <li><a class="toctree-l4" href="#using">Using</a></li>
+                
+                    <li><a class="toctree-l4" href="#generating-a-bill-of-materials">Generating A Bill Of Materials</a></li>
+                
+                    <li><a class="toctree-l4" href="#generating-gerbers">Generating Gerbers</a></li>
                 
             
             </ul>
@@ -136,9 +137,41 @@
             <div class="section">
               
                 <h1 id="usage">Usage</h1>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><a href="http://kicad-pcb.org/download/">KiCad (v4.0.0+)</a></li>
+<li><a href="https://www.python.org/">Python 2.7</a> (For Scripts) with:</li>
+<li>BeautifulSoup (<code>$ pip install BeautifulSoup</code>)</li>
+</ul>
+<h2 id="using">Using</h2>
 <p>To use Flicker Light Node Hardware, just clone it and modify it to your heart's content:</p>
-<pre><code>$ git clone https://github.com/cwoodall/flicker-light-node-hardware.git
+<pre><code>$ git clone https://github.com/cwoodall/flighter-lights-node-hardware.git
 </code></pre>
+<h2 id="generating-a-bill-of-materials">Generating A Bill Of Materials</h2>
+<p>From <code>eeschema</code> with the schematic file open:</p>
+<ol>
+<li><code>Tools &gt;&gt; Generate Bill Of Materials</code></li>
+<li>Press <code>Add Plugin</code> then add <code>scripts/genbom.py</code></li>
+<li>Change the command line info to:</li>
+</ol>
+<p><code>python "%P/../scripts/genbom.py" "%I" "%O-bom.csv"</code>
+4. Press <code>Generate</code> the bill of materials will now be in the file flighter-lights-node-hardware-bom.csv</p>
+<h2 id="generating-gerbers">Generating Gerbers</h2>
+<p>From <code>pcbnew</code> with the pcb file open:</p>
+<ol>
+<li><code>File &gt;&gt; Plot</code></li>
+<li>Make the settings match:
+   <center><img alt="PCBNew Gerber Settings" src="../assets/img/pcbnew-gerber-settings.png" /></center></li>
+<li>Press <code>Plot</code></li>
+<li>Press <code>Generate Drill File</code>
+   <center><img alt="PCBNew Drill Settings" src="../assets/img/pcbnew-drill-settings.png" /></center></li>
+<li>Press <code>Drill File</code></li>
+<li>Your outputs will be in the <code>output</code> folder</li>
+</ol>
+<h3 id="to-order-from-oshpark">To order from OSHPark</h3>
+<ol>
+<li>Upload the <code>.kicad_pcb</code> file.</li>
+</ol>
               
             </div>
           </div>
@@ -149,7 +182,7 @@
         <a href="../licenses/" class="btn btn-neutral float-right" title="License">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href=".." class="btn btn-neutral" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -177,7 +210,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../licenses/" style="color: #fcfcfc">Next &raquo;</a></span>

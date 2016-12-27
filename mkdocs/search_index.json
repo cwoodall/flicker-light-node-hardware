@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Flicker Light Node Hardware\n\n\nDescription\n\n\nHardware for the Flicker Light Nodes using ATMega168's and NRF24L01's\n\n\n\n\nLicense: \nCC BY 4.0\n\n\nDocumentation: \nflicker-light-node-hardware.readthedocs.org\n\n\n\n\nFeatures\n\n\n\n\nTODO",
+            "text": "Flicker Light Node Hardware\n\n\nDescription\n\n\nHardware for the Flicker Light Nodes using ATMega168's and NRF24L01's.\n\n\n\n\nLicense: \nCC BY 4.0\n\n\nDocumentation: \nflighter-lights-node-hardware.readthedocs.org\n\n\n\n\nFeatures\n\n\n\n\nTODO",
             "title": "Introduction"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#description",
-            "text": "Hardware for the Flicker Light Nodes using ATMega168's and NRF24L01's   License:  CC BY 4.0  Documentation:  flicker-light-node-hardware.readthedocs.org",
+            "text": "Hardware for the Flicker Light Nodes using ATMega168's and NRF24L01's.   License:  CC BY 4.0  Documentation:  flighter-lights-node-hardware.readthedocs.org",
             "title": "Description"
         },
         {
@@ -21,24 +21,39 @@
             "title": "Features"
         },
         {
-            "location": "/installation/",
-            "text": "Installation\n\n\nJust clone this project from Github:\n\n\n$ git clone https://github.com/cwoodall/flicker-light-node-hardware.git",
-            "title": "Installation"
-        },
-        {
-            "location": "/installation/#installation",
-            "text": "Just clone this project from Github:  $ git clone https://github.com/cwoodall/flicker-light-node-hardware.git",
-            "title": "Installation"
-        },
-        {
             "location": "/usage/",
-            "text": "Usage\n\n\nTo use Flicker Light Node Hardware, just clone it and modify it to your heart's content:\n\n\n$ git clone https://github.com/cwoodall/flicker-light-node-hardware.git",
+            "text": "Usage\n\n\nRequirements\n\n\n\n\nKiCad (v4.0.0+)\n\n\nPython 2.7\n (For Scripts) with:\n\n\nBeautifulSoup (\n$ pip install BeautifulSoup\n)\n\n\n\n\nUsing\n\n\nTo use Flicker Light Node Hardware, just clone it and modify it to your heart's content:\n\n\n$ git clone https://github.com/cwoodall/flighter-lights-node-hardware.git\n\n\n\nGenerating A Bill Of Materials\n\n\nFrom \neeschema\n with the schematic file open:\n\n\n\n\nTools >> Generate Bill Of Materials\n\n\nPress \nAdd Plugin\n then add \nscripts/genbom.py\n\n\nChange the command line info to:\n\n\n\n\npython \"%P/../scripts/genbom.py\" \"%I\" \"%O-bom.csv\"\n\n4. Press \nGenerate\n the bill of materials will now be in the file flighter-lights-node-hardware-bom.csv\n\n\nGenerating Gerbers\n\n\nFrom \npcbnew\n with the pcb file open:\n\n\n\n\nFile >> Plot\n\n\nMake the settings match:\n   \n\n\nPress \nPlot\n\n\nPress \nGenerate Drill File\n\n   \n\n\nPress \nDrill File\n\n\nYour outputs will be in the \noutput\n folder\n\n\n\n\nTo order from OSHPark\n\n\n\n\nUpload the \n.kicad_pcb\n file.",
             "title": "Usage"
         },
         {
             "location": "/usage/#usage",
-            "text": "To use Flicker Light Node Hardware, just clone it and modify it to your heart's content:  $ git clone https://github.com/cwoodall/flicker-light-node-hardware.git",
+            "text": "",
             "title": "Usage"
+        },
+        {
+            "location": "/usage/#requirements",
+            "text": "KiCad (v4.0.0+)  Python 2.7  (For Scripts) with:  BeautifulSoup ( $ pip install BeautifulSoup )",
+            "title": "Requirements"
+        },
+        {
+            "location": "/usage/#using",
+            "text": "To use Flicker Light Node Hardware, just clone it and modify it to your heart's content:  $ git clone https://github.com/cwoodall/flighter-lights-node-hardware.git",
+            "title": "Using"
+        },
+        {
+            "location": "/usage/#generating-a-bill-of-materials",
+            "text": "From  eeschema  with the schematic file open:   Tools >> Generate Bill Of Materials  Press  Add Plugin  then add  scripts/genbom.py  Change the command line info to:   python \"%P/../scripts/genbom.py\" \"%I\" \"%O-bom.csv\" \n4. Press  Generate  the bill of materials will now be in the file flighter-lights-node-hardware-bom.csv",
+            "title": "Generating A Bill Of Materials"
+        },
+        {
+            "location": "/usage/#generating-gerbers",
+            "text": "From  pcbnew  with the pcb file open:   File >> Plot  Make the settings match:\n     Press  Plot  Press  Generate Drill File \n     Press  Drill File  Your outputs will be in the  output  folder",
+            "title": "Generating Gerbers"
+        },
+        {
+            "location": "/usage/#to-order-from-oshpark",
+            "text": "Upload the  .kicad_pcb  file.",
+            "title": "To order from OSHPark"
         },
         {
             "location": "/licenses/",
@@ -52,7 +67,7 @@
         },
         {
             "location": "/history/",
-            "text": "History\n\n\n0.1.0 (2016-12-25)\n\n\n\n\nFirst release.",
+            "text": "History\n\n\n0.1.0 (2016-12-27)\n\n\n\n\nInitial release of flicker-lights-node-hardware.\n\n\nCompleted rev 0.1.0 PCB.\n\n\nCompleted rev 0.1.0 Schematic.\n\n\nAdded a BOM generation script.\n\n\n\n\nOrder Information\n\n\n\n- \nDigikey Cart\n\n\nPCB Preview\n\n\n\n\nSchematic",
             "title": "History"
         },
         {
@@ -61,13 +76,28 @@
             "title": "History"
         },
         {
-            "location": "/history/#010-2016-12-25",
-            "text": "First release.",
-            "title": "0.1.0 (2016-12-25)"
+            "location": "/history/#010-2016-12-27",
+            "text": "Initial release of flicker-lights-node-hardware.  Completed rev 0.1.0 PCB.  Completed rev 0.1.0 Schematic.  Added a BOM generation script.",
+            "title": "0.1.0 (2016-12-27)"
+        },
+        {
+            "location": "/history/#order-information",
+            "text": "-  Digikey Cart",
+            "title": "Order Information"
+        },
+        {
+            "location": "/history/#pcb-preview",
+            "text": "",
+            "title": "PCB Preview"
+        },
+        {
+            "location": "/history/#schematic",
+            "text": "",
+            "title": "Schematic"
         },
         {
             "location": "/authors/",
-            "text": "Credits\n\n\nDevelopment Lead\n\n\n\n\nChristopher Woodall (\nchris.j.woodall@gmail.com\n)\n\n\n\n\nContributors\n\n\nNone yet. Why not be the first?",
+            "text": "Credits\n\n\nDevelopment Lead\n\n\n\n\nChristopher Woodall\n (\nchris.j.woodall@gmail.com\n)\n\n\n\n\nContributors\n\n\nNone yet. Why not be the first?",
             "title": "Authors"
         },
         {
@@ -77,7 +107,7 @@
         },
         {
             "location": "/authors/#development-lead",
-            "text": "Christopher Woodall ( chris.j.woodall@gmail.com )",
+            "text": "Christopher Woodall  ( chris.j.woodall@gmail.com )",
             "title": "Development Lead"
         },
         {
@@ -87,7 +117,7 @@
         },
         {
             "location": "/contributing/",
-            "text": "Contributing\n\n\nContributions are welcome, and they are greatly appreciated! Every\nlittle bit helps, and credit will always be given.\n\n\nYou can contribute in many ways:\n\n\nTypes of Contributions\n\n\nReport Bugs\n\n\nReport bugs at https://github.com/cwoodall/flicker-light-node-hardware/issues.\n\n\nIf you are reporting a bug, please include:\n\n\n\n\nYour operating system name and version.\n\n\nAny details about your local setup that might be helpful in troubleshooting.\n\n\nDetailed steps to reproduce the bug.\n\n\n\n\nFix Bugs\n\n\nLook through the GitHub issues for bugs. Anything tagged with \"bug\"\nis open to whoever wants to implement it.\n\n\nImplement Features\n\n\nLook through the GitHub issues for features. Anything tagged with \"feature\"\nis open to whoever wants to implement it.\n\n\nWrite Documentation\n\n\nFlicker Light Node Hardware could always use more documentation, whether as part of the\nofficial Flicker Light Node Hardware docs or even on the web in blog posts,\narticles, and such.\n\n\nSubmit Feedback\n\n\nThe best way to send feedback is to file an issue at https://github.com/cwoodall/flicker-light-node-hardware/issues.\n\n\nIf you are proposing a feature:\n\n\n\n\nExplain in detail how it would work.\n\n\nKeep the scope as narrow as possible, to make it easier to implement.\n\n\n\n\nGet Started!\n\n\nReady to contribute? Here's how to set up \nflicker-light-node-hardware\n for local development.\n\n\n\n\nFork the \nflicker-light-node-hardware\n repo on GitHub.\n\n\n\n\nClone your fork locally:\n\n\n$ git clone git@github.com:your_name_here/flicker-light-node-hardware.git\n\n\n\n\n\n\n\nCreate a branch for local development:\n\n\n$ git checkout -b name-of-your-bugfix-or-feature\n\n\n\n\n\n\n\nNow you can make your changes locally.\n\n\n\n\n\n\nCommit your changes and push your branch to GitHub:\n\n\n$ git add .\n$ git commit -m \"Your detailed description of your changes.\"\n$ git push origin name-of-your-bugfix-or-feature\n\n\n\n\n\n\n\nSubmit a pull request through the GitHub website.",
+            "text": "Contributing\n\n\nContributions are welcome, and they are greatly appreciated! Every\nlittle bit helps, and credit will always be given.\n\n\nYou can contribute in many ways:\n\n\nTypes of Contributions\n\n\nReport Bugs\n\n\nReport bugs at https://github.com/cwoodall/flighter-lights-node-hardware/issues.\n\n\nIf you are reporting a bug, please include:\n\n\n\n\nYour operating system name and version.\n\n\nAny details about your local setup that might be helpful in troubleshooting.\n\n\nDetailed steps to reproduce the bug.\n\n\n\n\nFix Bugs\n\n\nLook through the GitHub issues for bugs. Anything tagged with \"bug\"\nis open to whoever wants to implement it.\n\n\nImplement Features\n\n\nLook through the GitHub issues for features. Anything tagged with \"feature\"\nis open to whoever wants to implement it.\n\n\nWrite Documentation\n\n\nFlicker Light Node Hardware could always use more documentation, whether as part of the\nofficial Flicker Light Node Hardware docs or even on the web in blog posts,\narticles, and such.\n\n\nSubmit Feedback\n\n\nThe best way to send feedback is to file an issue at https://github.com/cwoodall/flighter-lights-node-hardware/issues.\n\n\nIf you are proposing a feature:\n\n\n\n\nExplain in detail how it would work.\n\n\nKeep the scope as narrow as possible, to make it easier to implement.\n\n\n\n\nGet Started!\n\n\nReady to contribute? Here's how to set up \nflighter-lights-node-hardware\n for local development.\n\n\n\n\nFork the \nflighter-lights-node-hardware\n repo on GitHub.\n\n\n\n\nClone your fork locally:\n\n\n$ git clone git@github.com:your_name_here/flighter-lights-node-hardware.git\n\n\n\n\n\n\n\nCreate a branch for local development:\n\n\n$ git checkout -b name-of-your-bugfix-or-feature\n\n\n\n\n\n\n\nNow you can make your changes locally.\n\n\n\n\n\n\nCommit your changes and push your branch to GitHub:\n\n\n$ git add .\n$ git commit -m \"Your detailed description of your changes.\"\n$ git push origin name-of-your-bugfix-or-feature\n\n\n\n\n\n\n\nSubmit a pull request through the GitHub website.",
             "title": "Contributing"
         },
         {
@@ -102,7 +132,7 @@
         },
         {
             "location": "/contributing/#report-bugs",
-            "text": "Report bugs at https://github.com/cwoodall/flicker-light-node-hardware/issues.  If you are reporting a bug, please include:   Your operating system name and version.  Any details about your local setup that might be helpful in troubleshooting.  Detailed steps to reproduce the bug.",
+            "text": "Report bugs at https://github.com/cwoodall/flighter-lights-node-hardware/issues.  If you are reporting a bug, please include:   Your operating system name and version.  Any details about your local setup that might be helpful in troubleshooting.  Detailed steps to reproduce the bug.",
             "title": "Report Bugs"
         },
         {
@@ -122,12 +152,12 @@
         },
         {
             "location": "/contributing/#submit-feedback",
-            "text": "The best way to send feedback is to file an issue at https://github.com/cwoodall/flicker-light-node-hardware/issues.  If you are proposing a feature:   Explain in detail how it would work.  Keep the scope as narrow as possible, to make it easier to implement.",
+            "text": "The best way to send feedback is to file an issue at https://github.com/cwoodall/flighter-lights-node-hardware/issues.  If you are proposing a feature:   Explain in detail how it would work.  Keep the scope as narrow as possible, to make it easier to implement.",
             "title": "Submit Feedback"
         },
         {
             "location": "/contributing/#get-started",
-            "text": "Ready to contribute? Here's how to set up  flicker-light-node-hardware  for local development.   Fork the  flicker-light-node-hardware  repo on GitHub.   Clone your fork locally:  $ git clone git@github.com:your_name_here/flicker-light-node-hardware.git    Create a branch for local development:  $ git checkout -b name-of-your-bugfix-or-feature    Now you can make your changes locally.    Commit your changes and push your branch to GitHub:  $ git add .\n$ git commit -m \"Your detailed description of your changes.\"\n$ git push origin name-of-your-bugfix-or-feature    Submit a pull request through the GitHub website.",
+            "text": "Ready to contribute? Here's how to set up  flighter-lights-node-hardware  for local development.   Fork the  flighter-lights-node-hardware  repo on GitHub.   Clone your fork locally:  $ git clone git@github.com:your_name_here/flighter-lights-node-hardware.git    Create a branch for local development:  $ git checkout -b name-of-your-bugfix-or-feature    Now you can make your changes locally.    Commit your changes and push your branch to GitHub:  $ git add .\n$ git commit -m \"Your detailed description of your changes.\"\n$ git push origin name-of-your-bugfix-or-feature    Submit a pull request through the GitHub website.",
             "title": "Get Started!"
         }
     ]
