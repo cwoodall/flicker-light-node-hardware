@@ -67,7 +67,7 @@
         },
         {
             "location": "/history/",
-            "text": "History\n\n\n0.1.0 (2016-12-27)\n\n\n\n\nInitial release of flicker-lights-node-hardware.\n\n\nCompleted rev 0.1.0 PCB.\n\n\nCompleted rev 0.1.0 Schematic.\n\n\nAdded a BOM generation script.\n\n\n\n\nOrder Information\n\n\n\n- \nDigikey Cart\n\n\nPCB Preview\n\n\n\n\nSchematic",
+            "text": "History\n\n\n0.1.0 (2016-12-27)\n\n\n\n\nInitial release of flicker-lights-node-hardware.\n\n\nCompleted rev 0.1.0 PCB.\n\n\nCompleted rev 0.1.0 Schematic.\n\n\nAdded a BOM generation script.\n\n\n\n\nOrder Information\n\n\nWARNING: THIS HAS NOT BEEN TESTED YET ORDER AT YOUR OWN RISK\n\n\n\n- \nDigikey Cart\n\n\nPCB Preview\n\n\n\n\nSchematic",
             "title": "History"
         },
         {
@@ -82,7 +82,7 @@
         },
         {
             "location": "/history/#order-information",
-            "text": "-  Digikey Cart",
+            "text": "WARNING: THIS HAS NOT BEEN TESTED YET ORDER AT YOUR OWN RISK  \n-  Digikey Cart",
             "title": "Order Information"
         },
         {
