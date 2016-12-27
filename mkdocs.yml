@@ -7,7 +7,6 @@ copyright: '(c) 2016 by Christopher Woodall'
 
 pages:
 - 'Introduction': 'index.md'
-- 'Installation': 'installation.md'
 - 'Usage': 'usage.md'
 - 'License': 'licenses.md'
 - 'History': 'history.md'

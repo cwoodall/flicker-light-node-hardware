@@ -2,7 +2,7 @@
 
 ## Development Lead
 
-* Christopher Woodall (<chris.j.woodall@gmail.com>)
+* [Christopher Woodall](http://www.cwoodall.com) (<chris.j.woodall@gmail.com>)
 
 ## Contributors
 

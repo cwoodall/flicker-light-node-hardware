@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/cwoodall/workspace/personal/flicker-lights-node-hardware/pcb/flicker-lights-node-hardware.sch</source>
-    <date>Tue 27 Dec 2016 03:19:00 PM EST</date>
+    <date>Tue 27 Dec 2016 04:38:43 PM EST</date>
     <tool>Eeschema 4.0.4-1.fc25-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -677,20 +677,20 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="conn">
-      <uri>/usr/share/kicad/library/conn.lib</uri>
-    </library>
-    <library logical="regul">
-      <uri>/usr/share/kicad/library/regul.lib</uri>
-    </library>
     <library logical="device">
       <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="nrf24l01_module">
+      <uri>/home/cwoodall/workspace/personal/flicker-lights-node-hardware/libs/nrf24l01_module.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
     </library>
     <library logical="atmel">
       <uri>/usr/share/kicad/library/atmel.lib</uri>
     </library>
-    <library logical="nrf24l01_module">
-      <uri>/home/cwoodall/workspace/personal/flicker-lights-node-hardware/libs/nrf24l01_module.lib</uri>
+    <library logical="regul">
+      <uri>/usr/share/kicad/library/regul.lib</uri>
     </library>
   </libraries>
   <nets>

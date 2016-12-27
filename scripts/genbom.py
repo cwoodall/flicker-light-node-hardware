@@ -1,12 +1,13 @@
 #!/usr/bin/env python
-# Referenced from https://productize.be/kicad-bom-generation/
-# This script needs some improvement
-# (c) 2015 Productize <joost@productize.be>
+"""
+Script for generating a BOM from kicad
 
+Originally based on this script from productize:
+  - https://productize.be/kicad-bom-generation/
+"""
 import sys
 import copy
 import collections
-
 from bs4 import BeautifulSoup
 
 
@@ -15,7 +16,7 @@ def stringify(obj):
         item_str = ';'.join(c['Reference'])
     else:
         item_str = str(obj)
-    return '"{}"'.format(item_str)
+    return item_str
 
 
 soup = BeautifulSoup(open(sys.argv[1]), 'lxml')
