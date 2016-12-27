@@ -29,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:nrf24l01_module
-LIBS:flighter-lights-node-hardware-cache
+LIBS:flicker-lights-node-hardware-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -40,25 +40,10 @@ Date "2016-12-25"
 Rev "0.1.0"
 Comp "Christopher Woodall"
 Comment1 "(c) 2016"
-Comment2 "cookiecutter.project_type"
+Comment2 "OSHW"
 Comment3 "CC BY 4.0"
 Comment4 "github.com/cwoodall/flighter-lights-node-hardware"
 $EndDescr
-$Comp
-L ATMEGA168PA-MM IC1
-U 1 1 58609350
-P 4600 4650
-F 0 "IC1" H 3850 5900 50  0000 L BNN
-F 1 "ATMEGA168PA-MM" H 4950 3250 50  0000 L BNN
-F 2 "Housings_DFN_QFN:QFN-28-1EP_4x4mm_Pitch0.4mm" H 4600 4650 50  0001 C CIN
-F 3 "" H 4600 4650 50  0000 C CNN
-F 4 "ATMEGA168PA-MMH-ND" H 4600 4650 60  0001 C CNN "Supplier Part Number"
-F 5 "Digikey" H 4600 4650 60  0001 C CNN "Supplier"
-F 6 "Atmel" H 4600 4650 60  0001 C CNN "Manufacturer"
-F 7 "ATMEGA168PA-MMH" H 4600 4650 60  0001 C CNN "Manufacturer Part Number"
-	1    4600 4650
-	1    0    0    -1  
-$EndComp
 $Comp
 L CONN_01X04 P5
 U 1 1 58609357
@@ -295,42 +280,42 @@ $EndComp
 $Comp
 L LED D1
 U 1 1 5860B3AB
-P 6550 4500
-F 0 "D1" H 6550 4600 50  0000 C CNN
-F 1 "GREEN" H 6550 4400 50  0000 C CNN
-F 2 "LEDs:LED_0603" H 6550 4500 50  0001 C CNN
-F 3 "" H 6550 4500 50  0000 C CNN
-F 4 "Light-On" H 6550 4500 60  0001 C CNN "Manufacturer"
-F 5 "LTST-S270GKT" H 6550 4500 60  0001 C CNN "Manufacturer Part Number"
-F 6 "160-1475-1-ND" H 6550 4500 60  0001 C CNN "Supplier Part Number"
-F 7 "Digikey" H 6550 4500 60  0001 C CNN "Supplier"
-	1    6550 4500
+P 6550 5850
+F 0 "D1" H 6550 5950 50  0000 C CNN
+F 1 "GREEN" H 6550 5750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 6550 5850 50  0001 C CNN
+F 3 "" H 6550 5850 50  0000 C CNN
+F 4 "Light-On" H 6550 5850 60  0001 C CNN "Manufacturer"
+F 5 "LTST-S270GKT" H 6550 5850 60  0001 C CNN "Manufacturer Part Number"
+F 6 "160-1475-1-ND" H 6550 5850 60  0001 C CNN "Supplier Part Number"
+F 7 "Digikey" H 6550 5850 60  0001 C CNN "Supplier"
+	1    6550 5850
 	-1   0    0    1   
 $EndComp
 $Comp
 L R R4
 U 1 1 5860B54A
-P 7350 4650
-F 0 "R4" V 7430 4650 50  0000 C CNN
-F 1 "1K" V 7350 4650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7280 4650 50  0001 C CNN
-F 3 "" H 7350 4650 50  0000 C CNN
-F 4 "Yageo" V 7350 4650 60  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-071KL" V 7350 4650 60  0001 C CNN "Manufacturer Part Number"
-F 6 "311-1.0KGRCT-ND" V 7350 4650 60  0001 C CNN "Supplier Part Number"
-F 7 "Digikey" V 7350 4650 60  0001 C CNN "Supplier"
-	1    7350 4650
+P 7350 6000
+F 0 "R4" V 7430 6000 50  0000 C CNN
+F 1 "1K" V 7350 6000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7280 6000 50  0001 C CNN
+F 3 "" H 7350 6000 50  0000 C CNN
+F 4 "Yageo" V 7350 6000 60  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-071KL" V 7350 6000 60  0001 C CNN "Manufacturer Part Number"
+F 6 "311-1.0KGRCT-ND" V 7350 6000 60  0001 C CNN "Supplier Part Number"
+F 7 "Digikey" V 7350 6000 60  0001 C CNN "Supplier"
+	1    7350 6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR20
 U 1 1 5860B5CD
-P 7350 4850
-F 0 "#PWR20" H 7350 4600 50  0001 C CNN
-F 1 "GND" H 7350 4700 50  0000 C CNN
-F 2 "" H 7350 4850 50  0000 C CNN
-F 3 "" H 7350 4850 50  0000 C CNN
-	1    7350 4850
+P 7350 6200
+F 0 "#PWR20" H 7350 5950 50  0001 C CNN
+F 1 "GND" H 7350 6050 50  0000 C CNN
+F 2 "" H 7350 6200 50  0000 C CNN
+F 3 "" H 7350 6200 50  0000 C CNN
+	1    7350 6200
 	1    0    0    -1  
 $EndComp
 Text Label 5850 5450 0    60   ~ 0
@@ -549,10 +534,6 @@ F 3 "" H 3000 2900 50  0000 C CNN
 	1    3000 2900
 	1    0    0    -1  
 $EndComp
-Text Label 3350 2450 0    60   ~ 0
-ADC_9V
-Text Label 5650 4400 0    60   ~ 0
-ADC_9V
 $Comp
 L CONN_01X06 P1
 U 1 1 58616F8B
@@ -598,7 +579,7 @@ NoConn ~ 5600 4600
 NoConn ~ 5600 4700
 NoConn ~ 5600 4800
 NoConn ~ 5600 4900
-NoConn ~ 5600 5850
+NoConn ~ 5600 4500
 NoConn ~ 5600 5550
 NoConn ~ 5600 5350
 NoConn ~ 5600 3550
@@ -850,6 +831,23 @@ Text Notes 7900 700  0    118  ~ 0
 LED DRIVERS\n
 Text Notes 5200 700  0    118  ~ 0
 ICSP PROGRAMMER
+Text Label 3350 2450 0    60   ~ 0
+VADC
+Text Label 5700 4400 0    60   ~ 0
+VADC
+Text Notes 3350 2550 0    60   ~ 0
+VIN = ADC_RAW * 9.9 / 1024
+$Comp
+L ATMEGA168PA-A IC1
+U 1 1 5861ECEB
+P 4600 4650
+F 0 "IC1" H 3850 5900 50  0000 L BNN
+F 1 "ATMEGA168PA-A" H 5000 3250 50  0000 L BNN
+F 2 "Housings_QFP:LQFP-32_7x7mm_Pitch0.8mm" H 4600 4650 50  0000 C CIN
+F 3 "" H 4600 4650 50  0000 C CNN
+	1    4600 4650
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	1450 1600 1450 1450
 Wire Wire Line
@@ -874,7 +872,7 @@ Connection ~ 4600 1350
 Wire Wire Line
 	3700 5750 3650 5750
 Wire Wire Line
-	3650 5750 3650 6000
+	3650 5650 3650 6000
 Wire Wire Line
 	3650 5850 3700 5850
 Connection ~ 3650 5850
@@ -939,7 +937,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 5750 5600 5750
 Wire Wire Line
-	7350 4850 7350 4800
+	7350 6200 7350 6150
 Wire Wire Line
 	4600 1350 4400 1350
 Wire Wire Line
@@ -1066,9 +1064,9 @@ Wire Wire Line
 	3000 2450 7450 2450
 Connection ~ 3000 2450
 Wire Wire Line
-	7350 4500 6750 4500
+	7350 5850 6750 5850
 Wire Wire Line
-	6350 4500 5600 4500
+	6350 5850 5600 5850
 Wire Wire Line
 	1750 3950 1750 3900
 Wire Wire Line
@@ -1119,4 +1117,14 @@ Wire Wire Line
 	6150 4400 5600 4400
 Wire Wire Line
 	7450 4150 7450 2450
+Wire Wire Line
+	3700 3650 3600 3650
+Wire Wire Line
+	3600 3650 3600 3700
+Wire Wire Line
+	3600 3700 3550 3700
+Connection ~ 3550 3700
+Wire Wire Line
+	3700 5650 3650 5650
+Connection ~ 3650 5750
 $EndSCHEMATC
