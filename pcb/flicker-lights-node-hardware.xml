@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/cwoodall/workspace/personal/flighter-lights-node-hardware/pcb/flighter-lights-node-hardware.sch</source>
-    <date>Sun 25 Dec 2016 08:56:18 PM EST</date>
+    <source>/home/cwoodall/workspace/personal/flicker-lights-node-hardware/pcb/flicker-lights-node-hardware.sch</source>
+    <date>Tue 27 Dec 2016 12:26:00 PM EST</date>
     <tool>Eeschema 4.0.4-1.fc25-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -10,35 +10,27 @@
         <company>Christopher Woodall</company>
         <rev>0.1.0</rev>
         <date>2016-12-25</date>
-        <source>flighter-lights-node-hardware.sch</source>
+        <source>flicker-lights-node-hardware.sch</source>
         <comment number="1" value="(c) 2016"/>
-        <comment number="2" value="cookiecutter.project_type"/>
+        <comment number="2" value="OSHW"/>
         <comment number="3" value="CC BY 4.0"/>
         <comment number="4" value="github.com/cwoodall/flighter-lights-node-hardware"/>
       </title_block>
     </sheet>
   </design>
   <components>
-    <comp ref="IC1">
-      <value>ATMEGA168PA-MM</value>
-      <footprint>Housings_DFN_QFN:QFN-28-1EP_4x4mm_Pitch0.4mm</footprint>
-      <libsource lib="atmel" part="ATMEGA168PA-MM"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58609350</tstamp>
-    </comp>
     <comp ref="P5">
       <value>CONN_01X04</value>
       <footprint>Connectors_Molex:Molex_Microfit3_Header_02x02_Straight_43045-0428</footprint>
+      <fields>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">WM1814-ND</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="Manufacturer Part Number">0430450400</field>
+      </fields>
       <libsource lib="conn" part="CONN_01X04"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>58609357</tstamp>
-    </comp>
-    <comp ref="P6">
-      <value>CONN_01X04</value>
-      <footprint>Connectors_Molex:Molex_Microfit3_Header_02x02_Straight_43045-0428</footprint>
-      <libsource lib="conn" part="CONN_01X04"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5860935E</tstamp>
     </comp>
     <comp ref="U2">
       <value>LD1117S33CTR</value>
@@ -53,18 +45,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>58609365</tstamp>
     </comp>
-    <comp ref="SW1">
-      <value>SPST</value>
-      <fields>
-        <field name="Manufacturer Part Number">500SSP1S1M6QEA</field>
-        <field name="Manufacturer">E-Switch</field>
-        <field name="Supplier">Digikey</field>
-        <field name="Supplier Part Number">EG2478-ND</field>
-      </fields>
-      <libsource lib="device" part="SPST"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5860936C</tstamp>
-    </comp>
     <comp ref="P2">
       <value>CONN_01X02</value>
       <footprint>xess:HDR_1x2</footprint>
@@ -72,23 +52,15 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>58609373</tstamp>
     </comp>
-    <comp ref="C4">
-      <value>4.7uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
-      <libsource lib="device" part="CP1"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58609395</tstamp>
-    </comp>
-    <comp ref="C5">
-      <value>4.7uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
-      <libsource lib="device" part="CP1"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5860939C</tstamp>
-    </comp>
     <comp ref="R3">
-      <value>10k</value>
+      <value>10K</value>
       <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">RC0603JR-0710KL</field>
+        <field name="Supplier Part Number">311-10KGRCT-ND</field>
+        <field name="Supplier">Digikey</field>
+      </fields>
       <libsource lib="device" part="R_Small"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>586093DD</tstamp>
@@ -96,6 +68,12 @@
     <comp ref="P4">
       <value>CONN_02X03</value>
       <footprint>xess:HDR_2x3</footprint>
+      <fields>
+        <field name="Manufacturer">Harwin Inc.</field>
+        <field name="Manufacturer Part Number">M20-9980346</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">952-2121-ND</field>
+      </fields>
       <libsource lib="conn" part="CONN_02X03"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>586093E8</tstamp>
@@ -103,46 +81,26 @@
     <comp ref="C3">
       <value>.1uF</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">CC0603ZRY5V9BB104</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">311-1343-1-ND</field>
+      </fields>
       <libsource lib="device" part="C_Small"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>586097DD</tstamp>
-    </comp>
-    <comp ref="Q1">
-      <value>BSS138</value>
-      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
-      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
-      <libsource lib="device" part="Q_NMOS_GSD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58609CE9</tstamp>
-    </comp>
-    <comp ref="Q2">
-      <value>BSS138</value>
-      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
-      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
-      <libsource lib="device" part="Q_NMOS_GSD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5860A3E7</tstamp>
-    </comp>
-    <comp ref="Q3">
-      <value>BSS138</value>
-      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
-      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
-      <libsource lib="device" part="Q_NMOS_GSD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5860A44F</tstamp>
-    </comp>
-    <comp ref="Q5">
-      <value>BSS138</value>
-      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
-      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
-      <libsource lib="device" part="Q_NMOS_GSD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5860A61F</tstamp>
     </comp>
     <comp ref="Q6">
       <value>BSS138</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
+      <fields>
+        <field name="Supplier Part Number">BSS138LCT-ND</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Manufacturer Part Number">BSS138L</field>
+      </fields>
       <libsource lib="device" part="Q_NMOS_GSD"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5860A688</tstamp>
@@ -150,41 +108,38 @@
     <comp ref="D1">
       <value>GREEN</value>
       <footprint>LEDs:LED_0603</footprint>
+      <fields>
+        <field name="Manufacturer">Light-On</field>
+        <field name="Manufacturer Part Number">LTST-S270GKT</field>
+        <field name="Supplier Part Number">160-1475-1-ND</field>
+        <field name="Supplier">Digikey</field>
+      </fields>
       <libsource lib="device" part="LED"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5860B3AB</tstamp>
     </comp>
     <comp ref="R4">
-      <value>1k</value>
+      <value>1K</value>
       <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">RC0603JR-071KL</field>
+        <field name="Supplier Part Number">311-1.0KGRCT-ND</field>
+        <field name="Supplier">Digikey</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5860B54A</tstamp>
     </comp>
-    <comp ref="C6">
-      <value>.1uF</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
-      <libsource lib="device" part="C_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>586117B9</tstamp>
-    </comp>
-    <comp ref="C7">
-      <value>.1uF</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
-      <libsource lib="device" part="C_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58611872</tstamp>
-    </comp>
-    <comp ref="C2">
-      <value>.1uF</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
-      <libsource lib="device" part="C_Small"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58611AB8</tstamp>
-    </comp>
     <comp ref="R1">
-      <value>220K</value>
+      <value>200K</value>
       <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">RC0603JR-07200KL</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">311-200KGRCT-ND</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>58613DE6</tstamp>
@@ -192,6 +147,12 @@
     <comp ref="R2">
       <value>100K</value>
       <footprint>Resistors_SMD:R_0603</footprint>
+      <fields>
+        <field name="Manufacturer Part Number">RC0603JR-07100KL</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">311-100KGRCT-ND</field>
+      </fields>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>586142D5</tstamp>
@@ -206,6 +167,12 @@
     <comp ref="P3">
       <value>CONN_02X04</value>
       <footprint>Radio_Modules:NRF24L01</footprint>
+      <fields>
+        <field name="Supplier Part Number">S7072-ND</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer">Sullins Connector Solutions</field>
+        <field name="Manufacturer Part Number">PPTC042LFBN-RC</field>
+      </fields>
       <libsource lib="conn" part="CONN_02X04"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5860BDA3</tstamp>
@@ -226,72 +193,241 @@
     <comp ref="C1">
       <value>4.7uF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Manufacturer Part Number">GRM21BR61E475KA12L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Supplier Part Number">490-3335-1-ND</field>
+        <field name="Supplier">Digikey</field>
+      </fields>
       <libsource lib="device" part="CP1"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5861F96D</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>NRF24L01_MODULE</value>
+      <fields>
+        <field name="Supplier">Amazon</field>
+        <field name="Supplier Part Number">LD1117S25CTR</field>
+        <field name="Manufacturer Part Number">BC19422</field>
+        <field name="Manufacturer">Slou</field>
+      </fields>
+      <libsource lib="nrf24l01_module" part="NRF24L01_MODULE"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58626470</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Manufacturer Part Number">GRM21BR61E475KA12L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Supplier Part Number">490-3335-1-ND</field>
+        <field name="Supplier">Digikey</field>
+      </fields>
+      <libsource lib="device" part="CP1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5860D3A9</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Manufacturer Part Number">GRM21BR61E475KA12L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="Supplier Part Number">490-3335-1-ND</field>
+        <field name="Supplier">Digikey</field>
+      </fields>
+      <libsource lib="device" part="CP1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5860DB54</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">CC0603ZRY5V9BB104</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">311-1343-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5860E159</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">CC0603ZRY5V9BB104</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">311-1343-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5860E42F</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">CC0603ZRY5V9BB104</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">311-1343-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5860E745</tstamp>
+    </comp>
+    <comp ref="P6">
+      <value>CONN_01X04</value>
+      <footprint>Connectors_Molex:Molex_Microfit3_Header_02x02_Straight_43045-0428</footprint>
+      <fields>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">WM1814-ND</field>
+        <field name="Manufacturer">Molex</field>
+        <field name="Manufacturer Part Number">0430450400</field>
+      </fields>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58610153</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>BSS138</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
+      <fields>
+        <field name="Supplier Part Number">BSS138LCT-ND</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Manufacturer Part Number">BSS138L</field>
+      </fields>
+      <libsource lib="device" part="Q_NMOS_GSD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58610631</tstamp>
     </comp>
     <comp ref="Q4">
       <value>BSS138</value>
       <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
+      <fields>
+        <field name="Supplier Part Number">BSS138LCT-ND</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Manufacturer Part Number">BSS138L</field>
+      </fields>
       <libsource lib="device" part="Q_NMOS_GSD"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5860A59B</tstamp>
+      <tstamp>586106A8</tstamp>
     </comp>
-    <comp ref="U1">
-      <value>NRF24L01_MODULE</value>
-      <libsource lib="nrf24l01_module" part="NRF24L01_MODULE"/>
+    <comp ref="Q3">
+      <value>BSS138</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
+      <fields>
+        <field name="Supplier Part Number">BSS138LCT-ND</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Manufacturer Part Number">BSS138L</field>
+      </fields>
+      <libsource lib="device" part="Q_NMOS_GSD"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>58626470</tstamp>
+      <tstamp>58610734</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BSS138</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
+      <fields>
+        <field name="Supplier Part Number">BSS138LCT-ND</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Manufacturer Part Number">BSS138L</field>
+      </fields>
+      <libsource lib="device" part="Q_NMOS_GSD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586107BB</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BSS138</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138K.pdf</datasheet>
+      <fields>
+        <field name="Supplier Part Number">BSS138LCT-ND</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Manufacturer Part Number">BSS138L</field>
+      </fields>
+      <libsource lib="device" part="Q_NMOS_GSD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58610843</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>ATMEGA168PA-A</value>
+      <footprint>Housings_QFP:LQFP-32_7x7mm_Pitch0.8mm</footprint>
+      <fields>
+        <field name="Supplier">Digikey</field>
+        <field name="Supplier Part Number">ATMEGA168PA-AU-ND</field>
+        <field name="Manufacturer">Atmel</field>
+        <field name="Manufacturer Part Number">ATMEGA168PA-AU</field>
+      </fields>
+      <libsource lib="atmel" part="ATMEGA168PA-A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5861ECEB</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="atmel" part="ATMEGA168A-MM">
+    <libpart lib="atmel" part="ATMEGA168A-A">
       <aliases>
-        <alias>ATMEGA48A-MM</alias>
-        <alias>ATMEGA48PA-MM</alias>
-        <alias>ATMEGA88A-MM</alias>
-        <alias>ATMEGA88PA-MM</alias>
-        <alias>ATMEGA168PA-MM</alias>
-        <alias>ATMEGA328-MM</alias>
-        <alias>ATMEGA328P-MM</alias>
+        <alias>ATMEGA48A-A</alias>
+        <alias>ATMEGA48PA-A</alias>
+        <alias>ATMEGA88A-A</alias>
+        <alias>ATMEGA88PA-A</alias>
+        <alias>ATMEGA168PA-A</alias>
+        <alias>ATMEGA328-A</alias>
+        <alias>ATMEGA328P-A</alias>
       </aliases>
-      <description>QFN/MLF28, 16k Flash, 1kB SRAM, 512B EEPROM</description>
+      <description>TQFP32, 16k Flash, 1kB SRAM, 512B EEPROM</description>
       <docs>http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet.pdf</docs>
       <fields>
         <field name="Reference">IC</field>
-        <field name="Value">ATMEGA168A-MM</field>
-        <field name="Footprint">MLF/QFN28</field>
+        <field name="Value">ATMEGA168A-A</field>
+        <field name="Footprint">TQFP32</field>
       </fields>
       <pins>
         <pin num="1" name="(PCINT19/OC2B/INT1)PD3" type="BiDi"/>
         <pin num="2" name="(PCINT20/XCK/T0)PD4" type="BiDi"/>
-        <pin num="3" name="VCC" type="power_in"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="(PCINT6/XTAL1/TOSC1)PB6" type="BiDi"/>
-        <pin num="6" name="(PCINT7/XTAL2/TOSC2)PB7" type="BiDi"/>
-        <pin num="7" name="(PCINT21/OC0B/T1)PD5" type="BiDi"/>
-        <pin num="8" name="(PCINT22/OC0A/AIN0)PD6" type="BiDi"/>
-        <pin num="9" name="(PCINT23/AIN1)PD7" type="BiDi"/>
-        <pin num="10" name="(PCINT0/CLKO/ICP1)PB0" type="BiDi"/>
-        <pin num="11" name="(PCINT1/OC1A)PB1" type="BiDi"/>
-        <pin num="12" name="(PCINT2/OC1B/~SS~)PB2" type="BiDi"/>
-        <pin num="13" name="(PCINT3/OC2A/MOSI)PB3" type="BiDi"/>
-        <pin num="14" name="(PCINT4/MISO)PB4" type="BiDi"/>
-        <pin num="15" name="(PCINT5/SCK)PB5" type="BiDi"/>
-        <pin num="16" name="AVCC" type="power_in"/>
-        <pin num="17" name="AREF" type="BiDi"/>
-        <pin num="18" name="GND" type="power_in"/>
-        <pin num="19" name="(PCINT8/ADC0)PC0" type="BiDi"/>
-        <pin num="20" name="(PCINT9/ADC1)PC1" type="BiDi"/>
-        <pin num="21" name="(PCINT10/ADC2)PC2" type="BiDi"/>
-        <pin num="22" name="(PCINT11/ADC3)PC3" type="BiDi"/>
-        <pin num="23" name="(PCINT12/SDA/ADC4)PC4" type="BiDi"/>
-        <pin num="24" name="(PCINT13/SCL/ADC5)PC5" type="BiDi"/>
-        <pin num="25" name="(PCINT14/~RESET~)PC6" type="BiDi"/>
-        <pin num="26" name="(PCINT16/RXD)PD0" type="BiDi"/>
-        <pin num="27" name="(PCINT17/TXD)PD1" type="BiDi"/>
-        <pin num="28" name="(PCINT18/INT0)PD2" type="BiDi"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="VCC" type="power_in"/>
+        <pin num="7" name="(PCINT6/XTAL1/TOSC1)PB6" type="BiDi"/>
+        <pin num="8" name="(PCINT7/XTAL2/TOSC2)PB7" type="BiDi"/>
+        <pin num="9" name="(PCINT21/OC0B/T1)PD5" type="BiDi"/>
+        <pin num="10" name="(PCINT22/OC0A/AIN0)PD6" type="BiDi"/>
+        <pin num="11" name="(PCINT23/AIN1)PD7" type="BiDi"/>
+        <pin num="12" name="(PCINT0/CLKO/ICP1)PB0" type="BiDi"/>
+        <pin num="13" name="(PCINT1/OC1A)PB1" type="BiDi"/>
+        <pin num="14" name="(PCINT2/OC1B/~SS~)PB2" type="BiDi"/>
+        <pin num="15" name="(PCINT3/OC2A/MOSI)PB3" type="BiDi"/>
+        <pin num="16" name="(PCINT4/MISO)PB4" type="BiDi"/>
+        <pin num="17" name="(PCINT5/SCK)PB5" type="BiDi"/>
+        <pin num="18" name="AVCC" type="power_in"/>
+        <pin num="19" name="ADC6" type="input"/>
+        <pin num="20" name="AREF" type="BiDi"/>
+        <pin num="21" name="GND" type="power_in"/>
+        <pin num="22" name="ADC7" type="input"/>
+        <pin num="23" name="(PCINT8/ADC0)PC0" type="BiDi"/>
+        <pin num="24" name="(PCINT9/ADC1)PC1" type="BiDi"/>
+        <pin num="25" name="(PCINT10/ADC2)PC2" type="BiDi"/>
+        <pin num="26" name="(PCINT11/ADC3)PC3" type="BiDi"/>
+        <pin num="27" name="(PCINT12/SDA/ADC4)PC4" type="BiDi"/>
+        <pin num="28" name="(PCINT13/SCL/ADC5)PC5" type="BiDi"/>
+        <pin num="29" name="(PCINT14/~RESET~)PC6" type="BiDi"/>
+        <pin num="30" name="(PCINT16/RXD)PD0" type="BiDi"/>
+        <pin num="31" name="(PCINT17/TXD)PD1" type="BiDi"/>
+        <pin num="32" name="(PCINT18/INT0)PD2" type="BiDi"/>
       </pins>
     </libpart>
     <libpart lib="conn" part="CONN_01X02">
@@ -539,21 +675,10 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="SPST">
-      <description>Interrupteur simple</description>
-      <fields>
-        <field name="Reference">SW</field>
-        <field name="Value">SPST</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-        <pin num="2" name="2" type="input"/>
-      </pins>
-    </libpart>
   </libparts>
   <libraries>
-    <library logical="atmel">
-      <uri>/usr/share/kicad/library/atmel.lib</uri>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
     </library>
     <library logical="regul">
       <uri>/usr/share/kicad/library/regul.lib</uri>
@@ -561,198 +686,202 @@
     <library logical="device">
       <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
-    <library logical="conn">
-      <uri>/usr/share/kicad/library/conn.lib</uri>
+    <library logical="atmel">
+      <uri>/usr/share/kicad/library/atmel.lib</uri>
     </library>
     <library logical="nrf24l01_module">
-      <uri>/home/cwoodall/workspace/personal/flighter-lights-node-hardware/libs/nrf24l01_module.lib</uri>
+      <uri>/home/cwoodall/workspace/personal/flicker-lights-node-hardware/libs/nrf24l01_module.lib</uri>
     </library>
   </libraries>
   <nets>
     <net code="1" name="Net-(C3-Pad1)">
       <node ref="C3" pin="1"/>
-      <node ref="IC1" pin="17"/>
+      <node ref="IC1" pin="20"/>
     </net>
-    <net code="2" name="Net-(IC1-Pad25)">
-      <node ref="P4" pin="5"/>
-      <node ref="R3" pin="2"/>
-      <node ref="IC1" pin="25"/>
-    </net>
-    <net code="3" name="Net-(IC1-Pad9)">
-      <node ref="IC1" pin="9"/>
-    </net>
-    <net code="4" name="Net-(IC1-Pad10)">
-      <node ref="IC1" pin="10"/>
-    </net>
-    <net code="5" name="Net-(IC1-Pad28)">
-      <node ref="IC1" pin="28"/>
-    </net>
-    <net code="6" name="Net-(IC1-Pad2)">
-      <node ref="IC1" pin="2"/>
-    </net>
-    <net code="7" name="Net-(IC1-Pad24)">
-      <node ref="IC1" pin="24"/>
-    </net>
-    <net code="8" name="Net-(IC1-Pad23)">
-      <node ref="IC1" pin="23"/>
-    </net>
-    <net code="9" name="Net-(IC1-Pad22)">
-      <node ref="IC1" pin="22"/>
-    </net>
-    <net code="10" name="Net-(IC1-Pad21)">
-      <node ref="IC1" pin="21"/>
-    </net>
-    <net code="11" name="Net-(IC1-Pad6)">
-      <node ref="IC1" pin="6"/>
-    </net>
-    <net code="12" name="Net-(IC1-Pad5)">
-      <node ref="IC1" pin="5"/>
-    </net>
-    <net code="13" name="Net-(P1-Pad6)">
-      <node ref="P1" pin="6"/>
-    </net>
-    <net code="14" name="Net-(P1-Pad3)">
-      <node ref="P1" pin="3"/>
-    </net>
-    <net code="15" name="/FTDI_TX">
-      <node ref="IC1" pin="27"/>
-      <node ref="P1" pin="5"/>
-    </net>
-    <net code="16" name="Net-(P6-Pad2)">
-      <node ref="P6" pin="2"/>
-      <node ref="Q4" pin="3"/>
-    </net>
-    <net code="17" name="GND">
+    <net code="2" name="GND">
+      <node ref="Q4" pin="2"/>
+      <node ref="IC1" pin="3"/>
       <node ref="Q1" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="P2" pin="2"/>
-      <node ref="P4" pin="6"/>
-      <node ref="C5" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="IC1" pin="5"/>
       <node ref="Q5" pin="2"/>
+      <node ref="U2" pin="1"/>
       <node ref="R2" pin="2"/>
+      <node ref="P2" pin="2"/>
+      <node ref="IC1" pin="21"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="P4" pin="6"/>
+      <node ref="C3" pin="2"/>
+      <node ref="P3" pin="1"/>
       <node ref="Q6" pin="2"/>
       <node ref="R4" pin="2"/>
       <node ref="P1" pin="1"/>
-      <node ref="Q3" pin="2"/>
-      <node ref="Q2" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U2" pin="1"/>
-      <node ref="IC1" pin="18"/>
-      <node ref="C6" pin="1"/>
-      <node ref="C2" pin="2"/>
+    </net>
+    <net code="3" name="/NRF24_CE">
+      <node ref="P3" pin="3"/>
+      <node ref="IC1" pin="13"/>
+    </net>
+    <net code="4" name="/NRF24_SCK">
+      <node ref="P4" pin="3"/>
+      <node ref="P3" pin="5"/>
+      <node ref="IC1" pin="17"/>
+    </net>
+    <net code="5" name="/NRF24_MI">
+      <node ref="IC1" pin="16"/>
+      <node ref="P3" pin="7"/>
+      <node ref="P4" pin="1"/>
+    </net>
+    <net code="6" name="Net-(IC1-Pad29)">
+      <node ref="IC1" pin="29"/>
+      <node ref="P4" pin="5"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="7" name="Net-(IC1-Pad25)">
+      <node ref="IC1" pin="25"/>
+    </net>
+    <net code="8" name="Net-(IC1-Pad24)">
+      <node ref="IC1" pin="24"/>
+    </net>
+    <net code="9" name="Net-(IC1-Pad32)">
+      <node ref="IC1" pin="32"/>
+    </net>
+    <net code="10" name="Net-(IC1-Pad22)">
+      <node ref="IC1" pin="22"/>
+    </net>
+    <net code="11" name="Net-(IC1-Pad12)">
+      <node ref="IC1" pin="12"/>
+    </net>
+    <net code="12" name="Net-(IC1-Pad26)">
+      <node ref="IC1" pin="26"/>
+    </net>
+    <net code="13" name="Net-(D1-Pad2)">
+      <node ref="IC1" pin="11"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="14" name="Net-(IC1-Pad8)">
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="15" name="Net-(IC1-Pad7)">
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="16" name="Net-(IC1-Pad19)">
+      <node ref="IC1" pin="19"/>
+    </net>
+    <net code="17" name="Net-(IC1-Pad28)">
+      <node ref="IC1" pin="28"/>
+    </net>
+    <net code="18" name="Net-(IC1-Pad27)">
+      <node ref="IC1" pin="27"/>
+    </net>
+    <net code="19" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="20" name="+3V3">
+      <node ref="P3" pin="2"/>
+      <node ref="P1" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="P4" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C5" pin="1"/>
       <node ref="IC1" pin="4"/>
-      <node ref="P3" pin="1"/>
-      <node ref="Q4" pin="2"/>
-      <node ref="C1" pin="2"/>
+      <node ref="IC1" pin="6"/>
+      <node ref="IC1" pin="18"/>
     </net>
-    <net code="18" name="Net-(F1-Pad2)">
-      <node ref="F1" pin="2"/>
-      <node ref="SW1" pin="1"/>
-    </net>
-    <net code="19" name="Net-(F1-Pad1)">
+    <net code="21" name="Net-(F1-Pad1)">
       <node ref="P2" pin="1"/>
       <node ref="F1" pin="1"/>
     </net>
-    <net code="20" name="Net-(D1-Pad2)">
-      <node ref="IC1" pin="20"/>
-      <node ref="D1" pin="2"/>
+    <net code="22" name="Net-(P6-Pad2)">
+      <node ref="P6" pin="2"/>
+      <node ref="Q4" pin="3"/>
     </net>
-    <net code="21" name="Net-(D1-Pad1)">
-      <node ref="R4" pin="1"/>
-      <node ref="D1" pin="1"/>
-    </net>
-    <net code="22" name="+9V">
-      <node ref="C7" pin="1"/>
-      <node ref="P5" pin="1"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C4" pin="1"/>
-      <node ref="P6" pin="1"/>
-      <node ref="SW1" pin="2"/>
-      <node ref="R1" pin="1"/>
-      <node ref="U2" pin="3"/>
-    </net>
-    <net code="23" name="+3V3">
-      <node ref="C1" pin="1"/>
-      <node ref="P4" pin="2"/>
-      <node ref="R3" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="P1" pin="2"/>
-      <node ref="P3" pin="2"/>
-      <node ref="IC1" pin="16"/>
-      <node ref="U2" pin="2"/>
-      <node ref="IC1" pin="3"/>
-      <node ref="C5" pin="1"/>
-    </net>
-    <net code="24" name="Net-(P5-Pad4)">
+    <net code="23" name="Net-(P5-Pad4)">
       <node ref="P5" pin="4"/>
       <node ref="Q3" pin="3"/>
     </net>
-    <net code="25" name="Net-(P5-Pad3)">
+    <net code="24" name="Net-(P5-Pad3)">
       <node ref="P5" pin="3"/>
       <node ref="Q2" pin="3"/>
     </net>
-    <net code="26" name="Net-(P5-Pad2)">
+    <net code="25" name="Net-(P5-Pad2)">
       <node ref="P5" pin="2"/>
       <node ref="Q1" pin="3"/>
     </net>
+    <net code="26" name="+9V">
+      <node ref="C4" pin="1"/>
+      <node ref="P5" pin="1"/>
+      <node ref="P6" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="F1" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
     <net code="27" name="Net-(P6-Pad4)">
-      <node ref="Q6" pin="3"/>
       <node ref="P6" pin="4"/>
+      <node ref="Q6" pin="3"/>
     </net>
-    <net code="28" name="/FTDI_RX">
-      <node ref="IC1" pin="26"/>
-      <node ref="P1" pin="4"/>
-    </net>
-    <net code="29" name="Net-(P6-Pad3)">
+    <net code="28" name="Net-(P6-Pad3)">
       <node ref="P6" pin="3"/>
       <node ref="Q5" pin="3"/>
     </net>
-    <net code="30" name="/ADC_9V">
-      <node ref="IC1" pin="19"/>
-      <node ref="R2" pin="1"/>
-      <node ref="R1" pin="2"/>
-    </net>
-    <net code="31" name="/LED_RED">
-      <node ref="IC1" pin="7"/>
+    <net code="29" name="/LED_RED">
       <node ref="Q6" pin="1"/>
+      <node ref="IC1" pin="9"/>
       <node ref="Q3" pin="1"/>
     </net>
-    <net code="32" name="/LED_GREEN">
-      <node ref="IC1" pin="8"/>
-      <node ref="Q1" pin="1"/>
-      <node ref="Q4" pin="1"/>
+    <net code="30" name="/NRF24_IRQ">
+      <node ref="P3" pin="8"/>
     </net>
-    <net code="33" name="/LED_BLUE">
-      <node ref="IC1" pin="1"/>
-      <node ref="Q5" pin="1"/>
-      <node ref="Q2" pin="1"/>
-    </net>
-    <net code="34" name="/NRF24_CE">
-      <node ref="IC1" pin="11"/>
-      <node ref="P3" pin="3"/>
-    </net>
-    <net code="35" name="/NRF24_MO">
+    <net code="31" name="/NRF24_MO">
+      <node ref="IC1" pin="15"/>
       <node ref="P3" pin="6"/>
       <node ref="P4" pin="4"/>
-      <node ref="IC1" pin="13"/>
     </net>
-    <net code="36" name="/NRF24_CSN">
+    <net code="32" name="/NRF24_CSN">
       <node ref="P3" pin="4"/>
-      <node ref="IC1" pin="12"/>
-    </net>
-    <net code="37" name="/NRF24_MI">
-      <node ref="P3" pin="7"/>
       <node ref="IC1" pin="14"/>
-      <node ref="P4" pin="1"/>
     </net>
-    <net code="38" name="/NRF24_SCK">
-      <node ref="IC1" pin="15"/>
-      <node ref="P4" pin="3"/>
-      <node ref="P3" pin="5"/>
+    <net code="33" name="/LED_GREEN">
+      <node ref="Q1" pin="1"/>
+      <node ref="IC1" pin="10"/>
+      <node ref="Q4" pin="1"/>
     </net>
-    <net code="39" name="/NRF24_IRQ">
-      <node ref="P3" pin="8"/>
+    <net code="34" name="/LED_BLUE">
+      <node ref="Q5" pin="1"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="IC1" pin="1"/>
+    </net>
+    <net code="35" name="Net-(IC1-Pad2)">
+      <node ref="IC1" pin="2"/>
+    </net>
+    <net code="36" name="/VADC">
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="IC1" pin="23"/>
+    </net>
+    <net code="37" name="Net-(P1-Pad6)">
+      <node ref="P1" pin="6"/>
+    </net>
+    <net code="38" name="Net-(P1-Pad3)">
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="39" name="/FTDI_TX">
+      <node ref="P1" pin="5"/>
+      <node ref="IC1" pin="31"/>
+    </net>
+    <net code="40" name="/FTDI_RX">
+      <node ref="P1" pin="4"/>
+      <node ref="IC1" pin="30"/>
     </net>
   </nets>
 </export>
