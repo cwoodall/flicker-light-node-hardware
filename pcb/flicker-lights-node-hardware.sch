@@ -318,11 +318,11 @@ F 3 "" H 7350 6200 50  0000 C CNN
 	1    7350 6200
 	1    0    0    -1  
 $EndComp
-Text Label 5850 5450 0    60   ~ 0
+Text Label 5850 5650 0    60   ~ 0
 LED_BLUE
 Text Label 5850 5750 0    60   ~ 0
 LED_GREEN
-Text Label 5850 5650 0    60   ~ 0
+Text Label 5850 5450 0    60   ~ 0
 LED_RED
 $Comp
 L GND #PWR014
